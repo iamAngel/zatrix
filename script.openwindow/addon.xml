@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.openwindow" name="afk limited patch" version="9.0" provider-name="afk">
+    <extension point="xbmc.addon.repository" name="afk limited patch">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>This is used ONLY for beta testing</summary>
+        <description>Beta testing only!!!
+        </description>
+        <platform>all</platform>
+    </extension>
+</addon>
+

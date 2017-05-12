@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+    id="skin.afkboxthemeX"
+    version="2.0.2"
+    name="AFK-Box X Theme"
+    provider-name="jurialmunkey">
+    <requires>
+        <import addon="xbmc.gui" version="5.10.0"/>
+        <import addon="script.skinshortcuts" version="0.4.0"/>
+        <import addon="service.library.data.provider" version="0.1.0"/>
+        <import addon="script.skin.helper.service" version="0.0.1"/>
+        <import addon="script.extendedinfo" version="3.0.0"/>
+        <import addon="script.globalsearch" version="5.0.0"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="script.toolbox" version="1.0.0"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+    </requires>
+    <extension
+    point="xbmc.gui.skin"
+    defaultthemename="Textures.xbt"
+    debugging="false"
+    effectslowdown="1">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
+        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht.</summary>
+        <description lang="en">AFK-Box Theme: AFK-Box X 1.0 skin created by jurialmunkey and modded by AFK developers. AFK-Box skin focuses on being simple, clean and minimalistic with a light spin.</description>
+        <description lang="nl">AFK-Box Theme: AFK-Box X 1.0 skin creëerd door jurialmunkey en gemodificeerd dooer AFK developers. AFK-Box skin focust zich op een eenvoudig zeinde, schoon en minimaal met een lichte twist.</description>
+        <platform>all</platform>
+    </extension>
+</addon>

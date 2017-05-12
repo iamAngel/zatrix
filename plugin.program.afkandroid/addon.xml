@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.afkandroid" name="AFK-Android Install" version="2.0.17" provider-name="AFK-Box">
+  <requires>
+    	<import addon="xbmc.python" version="2.1.0"/>
+	    <import addon="script.module.addon.common" />
+	    <import addon="script.afkboxsettings" />
+        <import addon="plugin.video.afkmenu" />
+        <import addon="script.speedtestnet" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AFKAndroid Install</summary>
+    <description lang="en">Installeer AFK-Box op Android, Fixes, Add-ons en meer.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
