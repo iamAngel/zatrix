@@ -1001,17 +1001,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.openwindow" name="afk limited patch" version="9.0" provider-name="afk">
-    <extension point="xbmc.addon.repository" name="afk limited patch">
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>This is used ONLY for beta testing</summary>
-        <description>Beta testing only!!!
-        </description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="script.salts.themepak" version="0.0.6" name="SALTS Themepak" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -1038,24 +1027,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<description>Themes for Specto.</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="script.speedtestnet"
-       name="AFK Box Speed Tester"
-       version="1.0.0"
-       provider-name="Josh.5 / AFK">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script"
-             library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">AFK Box Speed Tester</summary>
-    <description lang="en">AFK Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.allefilmskijken.com</description>
-    <platform>all</platform>
-  </extension>
 </addon>
 
 <addon id="script.video.F4mProxy"
