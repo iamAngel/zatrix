@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.afkandroid" name="AFK-Android Install" version="2.0.17" provider-name="AFK-Box">
-  <requires>
-    	<import addon="xbmc.python" version="2.1.0"/>
-	    <import addon="script.module.addon.common" />
-	    <import addon="script.afkboxsettings" />
-        <import addon="plugin.video.afkmenu" />
-        <import addon="script.speedtestnet" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">AFKAndroid Install</summary>
-    <description lang="en">Installeer AFK-Box op Android, Fixes, Add-ons en meer.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="7.0.9" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -82,41 +64,7 @@
 
 </addon>
 
-<addon id="plugin.video.afkiptv" name="AFK-IPTV Browser" version="1.0.10" provider-name="IPTV">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">AFK-IPTV BROWSER</summary>
-    <language>en</language>
-    <description lang="en">IPTV addon. Visit AlleFilmsKijken official site to order an official account.</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.afkmenu" name="AFK Box Menu" version="1.0.7B" provider-name="AFK">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Menu van de AFK Box</summary>
-    <description lang="en">Niet Gebruiken/verwijderen!</description>
-    <disclaimer lang="en">Use it at your own risk.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>MIT</license>
-    <forum></forum>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.exodus" version="3.1.11" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="3.1.12" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.exodus.artwork" />
@@ -469,11 +417,11 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.ufc-finest" name="[COLOR red][B]UFC[/B][/COLOR] [COLOR white][B]Finest[/B][/COLOR]" version="2.0" provider-name="@DetectiveKode">
+<addon id="plugin.video.ufc-finest" name="Planet MMA" version="2.6" provider-name="@DetectiveKode">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="repository.xbmchub" />
     <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="repository.echo" />
     <import addon="script.module.urlresolver"  version="2.1.2"/>
     <import addon="script.module.liveresolver" version="0.1.24"/>
     <import addon="script.common.plugin.cache" version="2.5.2"/>
@@ -485,8 +433,8 @@ http://halowtv.org[/COLOR]</description>
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">UFC Finest</summary>
-    <description lang="en">The Offical Home Of UFC Finest</description>
+    <summary lang="en">Planet MMA</summary>
+    <description lang="en">Planet MMA - All your MMA needs. Big thanks to @xEdiTz for art work and I can't forget @EchoCoder for bringing my ideas alive when required.</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -604,24 +552,27 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="repository.afkbox" name="AFK-Box repo" version="1.0.1" provider-name="allefilmskijken">
-	<extension point="xbmc.addon.repository" name="Zatrix Repository">
-    <dir>
-            <info compressed="false">https://raw.github.com/iamAngel/zatrix/master/addons.xml</info>
-            <checksum>https://raw.github.com/iamAngel/zatrix/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/iamAngel/zatrix/master/zips/</datadir>
-    </dir>
-    <dir>
-            <info compressed="false">https://raw.github.com/allefilmskijken/afk/master/addons.xml</info>
-            <checksum>https://raw.github.com/allefilmskijken/afk/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.github.com/allefilmskijken/afk/master/zips/</datadir>
-    </dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Official AFK-Box Addons</summary>
-		<description lang="en">Download and install addons from AlleFilmsKijken</description>
-		<platform>all</platform>
-	</extension>
+<addon id="repository.echo" name="Echo Coder Repository" version="2.01" provider-name="Echo Coder">
+    <extension point="xbmc.addon.repository" name="Echo Coder Repository">
+        <dir>
+            <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+            <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://offshoregit.com/unofficialsportsdevil/addons.xml</info>
+            <checksum>https://offshoregit.com/unofficialsportsdevil/addons.xml.md5</checksum>
+            <datadir zip="true">https://offshoregit.com/unofficialsportsdevil/</datadir>
+        </dir>
+        <info compressed="false">https://offshoregit.com/echocoder/main/addons.xml</info>
+        <checksum>https://offshoregit.com/echocoder/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://offshoregit.com/echocoder/main/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The official Echo Coder Repository.</summary>
+        <description>Support available at https://www.tvaddons.ag</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="1.7.3" provider-name="MetalKettle">
@@ -705,6 +656,21 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="repository.zatrix" name="Zatrix Repo" version="1.0.1" provider-name="Angel">
+	<extension point="xbmc.addon.repository" name="Zatrix Repository">
+    <dir>
+            <info compressed="false">https://raw.github.com/iamAngel/zatrix/master/addons.xml</info>
+            <checksum>https://raw.github.com/iamAngel/zatrix/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/iamAngel/zatrix/master/zips/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Official Zatrix Project</summary>
+		<description lang="en">Download and install addons from Zatrix build</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon
   id="resource.language.nl_nl"
   version="3.0.1"
@@ -730,61 +696,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   <extension point="kodi.addon.metadata">
     <summary lang="en">Dutch language pack</summary>
     <description lang="en">Dutch version of all texts used in Kodi.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.afkboxsettings"
-       name="AFK-Box Settings"
-       version="1.0.3A"
-       provider-name="AFK">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.audio.spotimc"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-      <summary lang="en">AFK-Box Onderhoud</summary>
-      <description lang="en">Tools for the AFK-Box</description>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-  </extension>
-</addon>
-
-<addon id="script.afkboxtools"
-       name="AFK-Box Onderhoud"
-       version="1.0.37"
-       provider-name="AFK">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.program.totalinstaller" version="1.0.7"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-      <summary lang="en">AFK-Box Onderhoud</summary>
-      <description lang="en">Tools for the AFK-Box</description>
-      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-  </extension>
-</addon>
-
-<addon id="script.afkboxtools2" name="AFK-Box Update Tools" version="2.0.21" provider-name="AFK">
-  <requires>
-    	<import addon="xbmc.python" version="2.1.0"/>
-    	<import addon="script.afkboxsettings" />
-        <import addon="plugin.video.afkmenu" />
-        <import addon="script.speedtestnet" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">AFK Installer</summary>
-    <description lang="en">Installeer de build van AlleFilmskijken.com</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1186,22 +1097,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="service.openelec.settings"
-       name="OpenELEC Configuration"
-       version="2.0.0"
-       provider-name="OpenELEC">
-   <requires>
-   	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"></extension>
-  <extension point="xbmc.service"       library="service.py" start="startup"></extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">OpenELEC Configuration</summary>
-    <description lang="en">Use this addon to manage your OpenELEC system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="service.subtitles.addic7ed"
        name="Addic7ed.com"
        version="5.0.1"
@@ -1272,158 +1167,5 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <summary lang="en">Configure and manage VPN connections using openVPN</summary>
     <description lang="en">Establish a connection to a VPN provider and automatically switch VPN locations based on the add-on being used.  Also supports automatic reconnect and connection at boot time.  And with some simple configuring (see README and remote.xml file in add-on directory), you can cycle through VPN connections using a remote button.</description>
   </extension>
-</addon>
-
-	<addon id="skin.afk.box" version="1.3.3" name="AFK-Box Theme" provider-name="AFK dank aan Jeroen">
-	<requires>
-		<import addon="xbmc.gui" version="5.3.0"/>
-		<import addon="script.artistslideshow" version="1.8.2"/>
-		<import addon="script.artwork.downloader" version="12.0.29"/>
-		<import addon="script.globalsearch" version="3.0.4"/>
-		<import addon="script.grab.fanart" version="0.13.0"/>
-		<import addon="script.skinshortcuts" version="0.4.4"/>
-		<import addon="script.tv.show.next.aired" version="6.0.12"/>
-		<import addon="script.watchlist" version="0.0.2"/>
-		<import addon="service.library.data.provider" version="0.0.7"/>
-    </requires>
-    <extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
-		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
-    </extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>AFK-theme by Jeroen</summary>
-		<summary lang="nl">AFK-theme door AFK mede door Jeroen</summary>
-		<summary lang="es">AFK-theme, hecho por AFK and Jeroen</summary>
-		<summary lang="pl">AFK-theme autorstwa AFK and Jeroena</summary>
-		<summary lang="de">AFK-theme, von AFK and Jeroen</summary>
-		<description>AFK-theme is a graphical interface for XBMC that understands your media is what truly matters. Elegance, simplicity, refinement, consistency and balanced design are keywords for this skin.</description>
-		<disclaimer>Mouse and touchscreen use not supported</disclaimer>
-		<license>Attribution-NonCommercial-ShareAlike 3.0 Unported</license>
-		<forum>http://allefilmskijken.com</forum>
-		<source>http://allefilmskijken.com</source>
-		<website>http://allefilmskijken.com</website>
-	</extension>
-</addon>
-
-<addon
-    id="skin.afkandroidtheme"
-    version="2.0.1"
-    name="AFK-Box Theme 2.0"
-    provider-name="jurialmunkey">
-    <requires>
-        <import addon="xbmc.gui" version="5.9.0"/>
-        <import addon="script.skinshortcuts" version="0.4.0"/>
-        <import addon="script.skin.helper.service" version="0.0.1"/>
-        <import addon="service.library.data.provider" version="0.1.0"/>
-        <import addon="script.extendedinfo" version="3.0.0"/>
-        <import addon="script.globalsearch" version="5.0.0"/>
-    </requires>
-    <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht.</summary>
-        <description lang="en">AFK-Box Theme: AFK-Box 2.0 skin created by jurialmunkey and modded by AFK developers. AFK-Box skin focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="nl">AFK-Box Theme: AFK-Box 2.0 skin creÃ«erd door jurialmunkey en gemodificeerd dooer AFK developers. AFK-Box skin focust zich op een eenvoudig zeinde, schoon en minimaal met een lichte twist.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon
-    id="skin.afkboxtheme"
-    version="2.0.3"
-    name="AFK-Box Theme 2.0"
-    provider-name="jurialmunkey">
-    <requires>
-        <import addon="xbmc.gui" version="5.9.0"/>
-        <import addon="script.skinshortcuts" version="0.4.0"/>
-        <import addon="script.skin.helper.service" version="0.0.1"/>
-        <import addon="service.library.data.provider" version="0.1.0"/>
-        <import addon="script.extendedinfo" version="3.0.0"/>
-        <import addon="script.globalsearch" version="5.0.0"/>
-    </requires>
-    <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht.</summary>
-        <description lang="en">AFK-Box Theme: AFK-Box 2.0 skin created by jurialmunkey and modded by AFK developers. AFK-Box skin focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="nl">AFK-Box Theme: AFK-Box 2.0 skin creÃ«erd door jurialmunkey en gemodificeerd dooer AFK developers. AFK-Box skin focust zich op een eenvoudig zeinde, schoon en minimaal met een lichte twist.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon
-    id="skin.afkboxthemem8splus"
-    version="2.0.2"
-    name="AFK-Box Theme 2.0 M8S+"
-    provider-name="jurialmunkey">
-    <requires>
-        <import addon="xbmc.gui" version="5.10.0"/>
-        <import addon="script.skinshortcuts" version="0.4.0"/>
-        <import addon="service.library.data.provider" version="0.1.0"/>
-        <import addon="script.skin.helper.service" version="0.0.1"/>
-        <import addon="script.extendedinfo" version="3.0.0"/>
-        <import addon="script.globalsearch" version="5.0.0"/>
-        <import addon="script.image.resource.select" version="0.0.5"/>
-        <import addon="script.toolbox" version="1.0.0"/>
-        <import addon="plugin.program.autocompletion" version="1.0.1"/>
-    </requires>
-    <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht.</summary>
-        <description lang="en">AFK-Box Theme: AFK-Box X 1.0 skin created by jurialmunkey and modded by AFK developers. AFK-Box skin focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="nl">AFK-Box Theme: AFK-Box X 1.0 skin creÃ«erd door jurialmunkey en gemodificeerd dooer AFK developers. AFK-Box skin focust zich op een eenvoudig zeinde, schoon en minimaal met een lichte twist.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon
-    id="skin.afkboxthemeX"
-    version="2.0.2"
-    name="AFK-Box X Theme"
-    provider-name="jurialmunkey">
-    <requires>
-        <import addon="xbmc.gui" version="5.10.0"/>
-        <import addon="script.skinshortcuts" version="0.4.0"/>
-        <import addon="service.library.data.provider" version="0.1.0"/>
-        <import addon="script.skin.helper.service" version="0.0.1"/>
-        <import addon="script.extendedinfo" version="3.0.0"/>
-        <import addon="script.globalsearch" version="5.0.0"/>
-        <import addon="script.image.resource.select" version="0.0.5"/>
-        <import addon="script.toolbox" version="1.0.0"/>
-        <import addon="plugin.program.autocompletion" version="1.0.1"/>
-    </requires>
-    <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1">
-        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht.</summary>
-        <description lang="en">AFK-Box Theme: AFK-Box X 1.0 skin created by jurialmunkey and modded by AFK developers. AFK-Box skin focuses on being simple, clean and minimalistic with a light spin.</description>
-        <description lang="nl">AFK-Box Theme: AFK-Box X 1.0 skin creÃ«erd door jurialmunkey en gemodificeerd dooer AFK developers. AFK-Box skin focust zich op een eenvoudig zeinde, schoon en minimaal met een lichte twist.</description>
-        <platform>all</platform>
-    </extension>
 </addon>
 </addons>

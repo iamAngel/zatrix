@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.ufc-finest" name="[COLOR red][B]UFC[/B][/COLOR] [COLOR white][B]Finest[/B][/COLOR]" version="2.0" provider-name="@DetectiveKode">
+<addon id="plugin.video.ufc-finest" name="Planet MMA" version="2.6" provider-name="@DetectiveKode">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="repository.xbmchub" />
     <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="repository.echo" />
     <import addon="script.module.urlresolver"  version="2.1.2"/>
     <import addon="script.module.liveresolver" version="0.1.24"/>
     <import addon="script.common.plugin.cache" version="2.5.2"/>
@@ -15,8 +15,8 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">UFC Finest</summary>
-    <description lang="en">The Offical Home Of UFC Finest</description>
+    <summary lang="en">Planet MMA</summary>
+    <description lang="en">Planet MMA - All your MMA needs. Big thanks to @xEdiTz for art work and I can't forget @EchoCoder for bringing my ideas alive when required.</description>
     <platform>all</platform>
   </extension>
 </addon>
