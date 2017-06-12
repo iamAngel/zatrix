@@ -94,6 +94,36 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.elysium" version="2017.06.10" name="Elysium" provider-name="Elysium">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.elysium.artwork"/>
+		<import addon="script.module.urlresolver"/>
+		<import addon="script.module.metahandler"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.beautifulsoup"/>
+		<import addon="script.module.schism.common"/>
+		<import addon="script.module.futures"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="elysium.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Elysium movies and TV shows</summary>
+		<description lang="en">Watch movies and TV shows in high quality! Please note that this addon is not an official part of the Kodi media player, and therefore not to be mentioned within official support channels. This addon has nothing to do with the media player itself, nor itâ€™s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or share any content, nor is heaffiliated with any of the content providers.</disclaimer>
+		<platform>all</platform>
+		<news>Rebrand from Zen to Elysium / Disabled cinemabox</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/01.jpg</screenshot>
+			<screenshot>resources/screenshots/02.jpg</screenshot>
+			<screenshot>resources/screenshots/03.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="plugin.video.exodus" version="3.1.16" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -327,7 +357,7 @@ http://www.hometheater.co.il</description>
 </addon>
 
 <!--suppress ALL -->
-<addon id="plugin.video.salts" version="2.0.194" name="Stream All The Sources" provider-name="tknorris">
+<addon id="plugin.video.salts" version="2.0.195" name="Stream All The Sources" provider-name="tknorris">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -682,58 +712,6 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.zen" version="1.4.5" name="elysium" provider-name="Zen">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.zen.artwork" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.metahandler" version="1.0.0" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.beautifulsoup" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="zen.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Elysium? Movies/TV Shows</summary>
-		<description lang="en">Watch Movies and TV Shows in High Definition and surround sound. Free providers might not work --- TO AUTHORIZE DEBRID LINKS USE THE URL RESOLVER Menu under TOOLS , AND ENABLE DEBRID SOURCES IN THE Providers SETTINGS --- </description>
-		<disclaimer lang="en">The Author does not host or share any content, nor is affiliated with the content providers.</disclaimer>
-		<platform>all</platform>
-		<website></website>
-		<news>Update Moviegee</news>
-        <assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/01.jpg</screenshot>
-			<screenshot>resources/screenshots/02.jpg</screenshot>
-			<screenshot>resources/screenshots/03.jpg</screenshot>
-        </assets>
-	</extension>
-</addon>
-
-<addon id="repository.echo" name="Echo Coder Repository" version="2.01" provider-name="Echo Coder">
-    <extension point="xbmc.addon.repository" name="Echo Coder Repository">
-        <dir>
-            <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-            <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://offshoregit.com/unofficialsportsdevil/addons.xml</info>
-            <checksum>https://offshoregit.com/unofficialsportsdevil/addons.xml.md5</checksum>
-            <datadir zip="true">https://offshoregit.com/unofficialsportsdevil/</datadir>
-        </dir>
-        <info compressed="false">https://offshoregit.com/echocoder/main/addons.xml</info>
-        <checksum>https://offshoregit.com/echocoder/main/addons.xml.md5</checksum>
-        <datadir zip="true">https://offshoregit.com/echocoder/main/zips/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>The official Echo Coder Repository.</summary>
-        <description>Support available at https://www.tvaddons.ag</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="2.0.0" provider-name="MetalKettle">
 	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
 	<dir>
@@ -750,26 +728,6 @@ http://halowtv.org[/COLOR]</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
 		<description>Download and install addons from MetalKettle</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.shani" name="Shanis Addon Repository" version="2.9" provider-name="Shani">
-	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
-        <dir>
-			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-		</dir>
-
-    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
-    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
-    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
-
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Addons related to XBMC for Zemtv etc</summary>
-		<description>Go though the plugins and see what you like</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -900,6 +858,20 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         <description>Spotimc lets you search for music, browse your playlists and play your favourite tunes right from XBMC.[CR][CR]This product uses SPOTIFY(R) CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.[CR][CR]Special thanks to Seeleck for the logo and skin improvements.[CR][CR]Special thanks also for the CherryPy project, the DejaVu fonts project and the GNOME project (high contrast icons theme).</description>
         <disclaimer>It requires a Spotify premium account.</disclaimer>
     </extension>
+</addon>
+
+<addon id="script.elysium.artwork" version="2017.06.08" name="Elysium Artwork" provider-name="Elysium">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Elysium Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.exodus.artwork" version="1.0.2" name="Exodus Artwork" provider-name="Exodus">
@@ -1084,6 +1056,22 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
+<addon id="script.module.schism.common" name="Elysium Common Libraries" version="2017.06.08" provider-name="Elysium">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.six" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.beautifulsoup" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Collection of modules used by Elysium</summary>
+		<description lang="en">Collection of modules used by Elysium</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
 <addon id="script.module.six"
        name="six"
        version="1.9.0"
@@ -1238,20 +1226,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <summary lang="en">Proxy for f4m</summary>
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
-</addon>
-
-<addon id="script.zen.artwork" version="1.4.0" name="Zen Artwork" provider-name="Zen">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Zen Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="service.autosubs"
