@@ -337,7 +337,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.renegadesdarts"
 	name="Renegades Darts"
-	version="2.0.0"
+	version="2.2.0"
 	provider-name="Coldkeys/AP">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -393,7 +393,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.SkyNet"
        name="SkyNet"
-       version="2.0"
+       version="2.2"
        provider-name="SkyNet">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -479,7 +479,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.Test"
        name="[COLOR red]Halow[COLOR green] LIVE  TV [/COLOR]"
-       version="9.0.1"
+       version="9.0.9"
        provider-name="Halow">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -503,7 +503,7 @@ http://www.hometheater.co.il</description>
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"> http://halowtv.com/</summary>
+    <summary lang="en"> http://halowtv.org/</summary>
     <description lang="en">[COLOR red]All channels from around the world/Movie/Child Movie/Streamax.tv/Swefilm.Tv/http://dreamfilmhd.bz// YouTube/Sports Replays/Filmon.TV/Radio/Ace Stream/Music/Live Sport/LiveStream/follow me on FB/Twitter
 Halow TV Add-on
 http://halowtv.org[/COLOR]</description>
@@ -656,7 +656,7 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.watchwrestling" name="Watch Wrestling" version="0.1.8" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+<addon id="plugin.video.watchwrestling" name="Watch Wrestling" version="0.2.4" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.t0mm0.common" version="0.0.1"/>
@@ -694,7 +694,7 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.wweonline" name="WWE Online" version="0.1.7" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+<addon id="plugin.video.wweonline" name="WWE Online" version="0.2.0" provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.urlresolver" version="0.0.1"/>
@@ -956,9 +956,10 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.image_cache" name="TMDB Image API Cache" version="0.0.4" provider-name="tvaddons.ag, tknorris">
+<addon id="script.module.image_cache" name="TMDB Image API Cache" version="0.0.8" provider-name="tvaddons.ag, tknorris">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.tknorris.shared" version="0.0.12"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
