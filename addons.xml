@@ -94,6 +94,33 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.Drstream" name="Dr Stream Fork" version="2.1" provider-name="The Alpha">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.liveresolver" version="0.1.24"/>
+		<import addon="script.video.F4mProxy" version="2.2.3"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Dr Stream Fork</summary>
+		<description lang="en">This Addon Is For The Alphas Donators
+		Warning!! IF THIS ADDON GOES TO THE PUBLIC ILL DESTROY IT SIMPLE</description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>REBOOT</news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.elysium" version="2017.06.10" name="Elysium" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -728,6 +755,19 @@ http://halowtv.org[/COLOR]</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>Install my Addons</summary>
 		<description>Download and install addons from MetalKettle</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.thealpha" name="[COLOR limegreen]The Alpha Repository[/COLOR]" version="1.0.5" provider-name="The Alpha">
+<extension point="xbmc.addon.repository" name="[COLOR red]TheAlpha Repository[/COLOR]">
+		<info compressed="false">http://streamaddons.com/Devs/TheAlpha/Repository/plugins/addons.xml</info>
+		<checksum>http://streamaddons.com/Devs/TheAlpha/Repository/plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://streamaddons.com/Devs/TheAlpha/Repository/plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>3rd Party Addons </summary>
+		<description>The Alpha Repository</description>
 		<platform>all</platform>
 	</extension>
 </addon>
