@@ -151,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="3.1.18" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="3.1.19" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.exodus.artwork" />
