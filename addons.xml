@@ -190,7 +190,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.genesisreborn" version="2017.06.27" name="Genesis Reborn" provider-name="Genesis Reborn">
+<addon id="plugin.video.genesisreborn" version="2017.06.27A" name="Genesis Reborn" provider-name="Genesis Reborn">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.genesisreborn.artwork" />
