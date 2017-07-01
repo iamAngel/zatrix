@@ -453,7 +453,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="12017.03.28B"
+  version="12017.03.28C"
   name="SportsDevil"
   provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
   <requires>
