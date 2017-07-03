@@ -949,7 +949,7 @@ and more.......</description>
     </extension>
 </addon>
 
-<addon id="script.elysium.artwork" version="2017.06.08" name="Elysium Artwork" provider-name="Elysium">
+<addon id="script.elysium.artwork" version="2017.06.27" name="Elysium Artwork" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -960,6 +960,7 @@ and more.......</description>
 		<summary>Themes for the Elysium Addon</summary>
 		<description></description>
 		<platform>all</platform>
+		<news>Added extra theme (thanks Will Martins)</news>
 	</extension>
 </addon>
 
