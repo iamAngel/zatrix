@@ -767,11 +767,15 @@ http://halowtv.org[/COLOR]</description>
 
 <addon id="plugin.video.xxx-o-dus"
 	     name="XXX-O-DUS"
-	     version="2.01"
-	     provider-name="Orion">
+	     version="3.00.001"
+	     provider-name="Xibalba">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xibalba"/>
+    <import addon="script.xxxodus.artwork"/>
+    <import addon="script.xxxodus.scrapers"/>
     <import addon="script.module.urlresolver"/>
+    <import addon="repository.xibalba"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -793,9 +797,6 @@ http://halowtv.org[/COLOR]</description>
     <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
-        <screenshot>resources/art/screenshots/screenshot-01.png</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-02.png</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-03.png</screenshot>
     </assets>
   </extension>
 </addon>
@@ -809,26 +810,6 @@ http://halowtv.org[/COLOR]</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>Welcome to the Jesusbox Repository where you will find all Jesusbox produced Addon-ons and wizards</summary>
 		<description>The Best Media Center Box Available</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.metalkettle" name="MetalKettles Addon Repository" version="2.0.0" provider-name="MetalKettle">
-	<extension point="xbmc.addon.repository" name="MetalKettles Addon Repository">
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/MetalKettle/MK/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/MetalKettle/MK/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/MetalKettle/MK/master/zips/</datadir>
-	</dir>
-	<dir>
-		<info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
-        	<checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
-        	<datadir zip="true">https://github.com/zqfaen/tva-common/raw/master/zips/</datadir>
-	</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install my Addons</summary>
-		<description>Download and install addons from MetalKettle</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -905,54 +886,26 @@ Addons Included
 	</extension>
 </addon>
 
-<addon id="repository.xbmchub" name="TVADDONS.AG Add-on Repository" version="1.0.7" provider-name="tvaddons.ag">
-	<extension point="xbmc.addon.repository" name="TVADDONS.AG Add-on Repository">
-	<dir>
-		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-	</dir>
-		<info compressed="false">https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/addons.xml</info>
-		<checksum>https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Unofficial Kodi Addons from TVADDONS.AG</summary>
-		<description>Download and install unofficial Kodi add-ons from the TVADDONS.AG add-on repository. Please visit www.tvaddons.ag for addon support.
-
-Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
-         <disclaimer>TVADDONS.AG did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
-		<platform>all</platform>
-                <forum>https://forums.tvaddons.ag</forum>
-                <website>https://www.tvaddons.ag</website>
-	</extension>
-</addon>
-
-<addon id="repository.xxxecho" name="Echo Coder XXX Repository" version="2.02" provider-name="Echo Coder">
-    <extension point="xbmc.addon.repository" name="Echo Coder XXX Repository">
-        <dir>
-            <info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
-            <checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
-        </dir>
-        <info compressed="false">https://offshoregit.com/echocoder/xxx/addons.xml</info>
-        <checksum>https://offshoregit.com/echocoder/xxx/addons.xml.md5</checksum>
-        <datadir zip="true">https://offshoregit.com/echocoder/xxx/zips/</datadir>
+<addon id="repository.xibalba" name="Xibalba Repository" version="1.01" provider-name="Xibalba">
+    <extension point="xbmc.addon.repository" name="Xibalba Repository">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+        <info compressed="false">https://github.com/xibalba10/repository.xibalba/raw/master/addons.xml</info>
+        <checksum>https://github.com/xibalba10/repository.xibalba/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/xibalba10/repository.xibalba/raw/master/zips/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>The official Echo Coder XXX Repository.</summary>
-        <description>Addons in this repository include:
-XXX-O-DUS
-and more.......</description>
-        <disclaimer>Support available at https://www.tvaddons.ag</disclaimer>
+        <summary>Unofficial Kodi Addons from Xibalba</summary>
+        <description>Download and install unofficial Kodi add-ons from the Xibalba add-on repository.
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+        <disclaimer></disclaimer>
         <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>screenshots/screenshot-01.png</screenshot>
-            <screenshot>screenshots/screenshot-02.png</screenshot>
-            <screenshot>screenshots/screenshot-03.png</screenshot>
-        </assets>
+        <forum>https://github.com/xibalba10</forum>
+        <website>https://github.com/xibalba10</website>
     </extension>
 </addon>
 
@@ -1398,6 +1351,17 @@ and more.......</description>
 	</extension>
 </addon>
 
+<addon id="script.module.xibalba" name="Xibalba Libraries" version="1.00.001" provider-name="Xibalba">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Forked from TK Norris Shared Module. Reusable Modules used by several of Xibalba's addons</summary>
+	</extension>
+</addon>
+
 <addon id="script.mrknow.urlresolver" name="Mrknow URLResolver" version="2017.06.14.1" provider-name="mrknow" >
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -1460,6 +1424,29 @@ and more.......</description>
     <summary lang="en">Proxy for f4m</summary>
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
+</addon>
+
+<addon id="script.xxxodus.artwork" version="1.00.000" name="XXXODUS Artwork" provider-name="Xibalba">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Artwork for XXXODUS</summary>
+		<description>Artwork for XXXODUS is maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.000" provider-name="Xibalba">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Scrapers for use in XXXODUS</summary>
+	</extension>
 </addon>
 
 <addon id="service.autosubs"
