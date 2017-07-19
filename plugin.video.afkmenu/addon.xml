@@ -7,7 +7,7 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Menu van de AFK Box</summary>
+    <summary lang="en">Menu van de Zatrix built</summary>
     <description lang="en">Niet Gebruiken/verwijderen!</description>
     <disclaimer lang="en">Use it at your own risk.</disclaimer>
     <language>en</language>
