@@ -72,7 +72,7 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Menu van de AFK Box</summary>
+    <summary lang="en">Menu van de Zatrix built</summary>
     <description lang="en">Niet Gebruiken/verwijderen!</description>
     <disclaimer lang="en">Use it at your own risk.</disclaimer>
     <language>en</language>
@@ -173,7 +173,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.elysium" version="2017.06.27t" name="Elysium" provider-name="Elysium">
+<addon id="plugin.video.elysium" version="2017.07.20a" name="Elysium" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.elysium.artwork" version="2017.06.27"/>
