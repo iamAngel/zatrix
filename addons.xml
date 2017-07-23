@@ -200,12 +200,12 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="3.1.23A" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="3.1.25" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.exodus.artwork" />
-		<import addon="script.exodus.metadata" />
-		<import addon="script.module.urlresolver" version="3.0.30" />
+		<import addon="script.exodus.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="3.0.33" />
 		<import addon="script.module.metahandler" version="2.9.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="exodus.py">
@@ -218,7 +218,7 @@
 		<forum></forum>
 		<website></website>
 		<source></source>
-		<news>Last Version Made From The [COLOR red][B]C0LD[/B][/COLOR][COLOR turquoise][B]FIRE[/B][/COLOR], If anything changes will be listed here, this version should fix missing sources!</news>
+		<news>This is the Last Version Made From [COLOR red][B]C0LD[/B][/COLOR][COLOR turquoise][B]FIRE[/B][/COLOR]. He'll not continue maintaining EXODUS anymore! Fixed missing sources, updated scrapers!</news>
 	</extension>
 </addon>
 
@@ -1099,6 +1099,21 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
+<addon id="script.module.f4mproxy"
+	     name="f4m proxy"
+	     version="1.0.16"
+	     provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Proxy for f4m</summary>
+    <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+  </extension>
+</addon>
+
 <addon id="script.module.futures"
        name="futures"
        version="2.2.0"
@@ -1196,7 +1211,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 
 <addon id="script.module.metahandler"
      name="metahandler"
-     version="2.9.0.1"
+     version="2.9.1"
      provider-name="Eldorado">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -1207,7 +1222,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
@@ -1354,7 +1369,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.34" provider-name="tvaddons.ag, Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.36" provider-name="tvaddons.ag, Eldorado">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
