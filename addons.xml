@@ -64,7 +64,7 @@
 
 </addon>
 
-<addon id="plugin.video.afkmenu" name="Zatrix Menu" version="1.0.13" provider-name="ANNE">
+<addon id="plugin.video.afkmenu" name="Zatrix Menu" version="1.0.14" provider-name="ANNE">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -72,7 +72,7 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Menu van de Zatrix built</summary>
+    <summary lang="en">Menu van de Zatrix Built</summary>
     <description lang="en">Niet Gebruiken/verwijderen!</description>
     <disclaimer lang="en">Use it at your own risk.</disclaimer>
     <language>en</language>
