@@ -146,6 +146,24 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.deportesalacarta"
+    name="Zatrix-365"
+    version="1.00"
+    provider-name="ANNA">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.Drstream" name="Dr Stream Fork" version="2.1" provider-name="The Alpha">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
