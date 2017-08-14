@@ -683,7 +683,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="12017.08.12"
+  version="12017.08.12A"
   name="SportsDevil"
   provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
   <requires>
