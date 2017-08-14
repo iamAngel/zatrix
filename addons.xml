@@ -83,10 +83,10 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.8.5" provider-name="Bennu">
+<addon id="plugin.video.bennu" name="Bennu" version="17.8.11" provider-name="Bennu">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+		<import addon="plugin.video.youtube" version="5.2.1" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
 		<import addon="script.module.urlresolver" version="3.0.0"/>
 		<import addon="script.module.liveresolver" version="0.1.24"/>
@@ -127,7 +127,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="1.1.5" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="1.1.7" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.covenant.artwork" version="1.0.0" />
@@ -158,6 +158,39 @@
 		</assets>
 		<news>[B]1.1.3[/B][CR]Code cosmetics</news>
 	</extension>
+</addon>
+
+
+<addon id="plugin.video.DecadoDocs" name="Decado Documentaries" version="1.0.3" provider-name="MetalKettle">
+
+  <requires>
+
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+
+        <provides>video</provides>
+
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en"></summary>
+
+    <description lang="en"></description>
+
+    <platform>all</platform>
+
+  </extension>
+
 </addon>
 
 <addon id="plugin.video.deportesalacarta"
@@ -205,7 +238,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.elysium" version="2017.07.20a" name="Elysium" provider-name="Elysium">
+<addon id="plugin.video.elysium" version="2017.08.08" name="Elysium" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.elysium.artwork" version="2017.06.27"/>
@@ -289,6 +322,28 @@
         <description></description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.football.today" name="Football Today" version="3.0.5" provider-name="lambda,jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+		<import addon="script.module.urlresolver" version="3.0.22"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Football on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.genesisreborn" version="2017.06.27A" name="Genesis Reborn" provider-name="Genesis Reborn">
@@ -434,6 +489,50 @@
   	<website></website>
   	<source></source>
   </extension>
+</addon>
+
+<addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.7" provider-name="lambda,enen92,jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+		<import addon="script.module.urlresolver" version="3.0.24"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NBA on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.nhlondemand" name="NHL On-demand" version="2.0.7" provider-name="lambda,jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" optional="true"/>
+		<import addon="script.module.parsedom" optional="true"/>
+		<import addon="script.module.urlresolver" version="3.0.24"/>
+		<import addon="plugin.video.youtube" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NHL on demand</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/lambda-addons</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="plugin.video.onlydutch"
@@ -584,7 +683,7 @@ http://www.hometheater.co.il</description>
 
 <addon
   id="plugin.video.SportsDevil"
-  version="12017.07.22A"
+  version="12017.08.12"
   name="SportsDevil"
   provider-name="MaxMustermann, Al101, Hubbab3, Jairox, Sattekop">
   <requires>
@@ -594,8 +693,8 @@ http://www.hometheater.co.il</description>
    <import addon="script.module.six" />
    <import addon="script.module.requests" />
    <import addon="script.module.livestreamer" />
-   <!--<import addon="script.video.F4mProxy" />
-   <import addon="plugin.video.f4mTester" />-->
+   <!-- <import addon="script.video.F4mProxy" /> -->
+   <!-- <import addon="plugin.video.f4mTester" /> -->
   </requires>
   <extension
     point="xbmc.python.pluginsource"
