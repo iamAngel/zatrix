@@ -659,7 +659,7 @@ http://www.hometheater.co.il</description>
 
 <addon id="plugin.video.SkyNet"
        name="SkyNet"
-       version="2.3"
+       version="2.9"
        provider-name="SkyNet">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
