@@ -79,7 +79,7 @@
 
 </addon>
 
-<addon id="plugin.video.afkmenu" name="Zatrix Menu" version="1.0.16" provider-name="ANNE">
+<addon id="plugin.video.afkmenu" name="Zatrix Menu" version="1.0.17" provider-name="ANNE">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -210,7 +210,7 @@
 
 <addon id="plugin.video.deportesalacarta"
     name="Zatrix-365"
-    version="1.00"
+    version="1.01"
     provider-name="ANNA">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
