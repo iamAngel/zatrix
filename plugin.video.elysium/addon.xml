@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.elysium" version="2017.08.28" name="Elysium" provider-name="Elysium">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.elysium" version="2017.08.28A" name="Elysium" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.elysium.artwork" version="2017.06.27"/>
