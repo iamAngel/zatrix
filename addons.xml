@@ -992,7 +992,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.salts" version="2.0.201" name="Stream All The Sources" provider-name="k3l3vra">
+<addon id="plugin.video.salts" version="2.0.203" name="Stream All The Sources" provider-name="k3l3vra, Movie/TVShow Images Fixed By Smash">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.urlresolver" version="3.0.0"/>
@@ -1006,7 +1006,7 @@ http://www.hometheater.co.il</description>
     </extension>
      <extension point="xbmc.service" library="service.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
-        <summary>Last Version Made From The TVA Guys</summary>
+        <summary>Last Version Made From The TVA Guys, movie/tvshow images fixed by smash</summary>
         <description>Last Version Made From The TVA Guys, trying to fix the install fail probs some are getting
         </description>
         <platform>all</platform>
