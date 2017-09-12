@@ -773,7 +773,7 @@
 
 <addon id="plugin.video.jericho"
        name="Jericho"
-       version="2.1.4"
+       version="2.1.5"
        provider-name="Team Jericho">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
