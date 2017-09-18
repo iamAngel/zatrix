@@ -513,7 +513,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.14" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="2.1.15" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.covenant.artwork" version="1.0.0" />
@@ -528,12 +528,14 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Covenant</summary>
 		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<description lang="hr">[I]Nova generacija[/I][CR][CR][B]Covenant Filmova i TV serija[/B][CR][CR]Ovaj dodatak ne sadrÅ¾i dijelove Kodi Medijskog Centra. Ne taÅ¾ite pomoÄ‡ za ovaj dodatak na sluÅ¾benim kanalima podrÅ¡ke za Kodi.[CR][CR]Autor ne posjeduje bilo kakav sadrÅ¾aj u ovom dodatku i ne preuzima bilo kakvu odgovornost za pronaÄ‘eni sadrÅ¾aj.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
 		<website></website>
 		<source></source>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadrÅ¾aj koji je pronaÄ‘en i nije povezan sa bilo kojim izvorom sadrÅ¾aja. Ovaj dodatak samo pretraÅ¾uje sadrÅ¾aj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
 
 		<assets>
 			<icon>icon.png</icon>
@@ -2072,7 +2074,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.04A" provider-name="Eldorado, tknorris, jsergio">
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.05" provider-name="Eldorado, tknorris, jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
