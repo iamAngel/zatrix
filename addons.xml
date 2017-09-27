@@ -371,7 +371,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.afkinstallerX" name="Update Tools" version="2017.0.9" provider-name="ANNE">
+<addon id="plugin.program.afkinstallerX" name="Update Tools" version="2017.0.15" provider-name="ANNE">
   <requires>
     	<import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -380,8 +380,8 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">AFK Installer</summary>
-    <description lang="en">Installeer de build van AlleFilmskijken.com</description>
+    <summary lang="en">Zatrix Installer</summary>
+    <description lang="en">Installeer de build van Zatrix</description>
     <platform>all</platform>
   </extension>
 </addon>
