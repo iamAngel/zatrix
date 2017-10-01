@@ -469,7 +469,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.9.27" provider-name="Bennu">
+<addon id="plugin.video.bennu" name="Bennu" version="17.9.30" provider-name="Bennu">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" version="5.2.1" />
