@@ -681,7 +681,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="4.1.01" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="4.1.02" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
@@ -712,7 +712,7 @@
 			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>[B]4.1.01[/B][CR]fixed/added scrapers</news>
+		<news>[B]4.1.02[/B][CR]Code cosmetics</news>
 	</extension>
 </addon>
 
@@ -1032,7 +1032,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.salts" version="3.0.00" name="Stream All The Sources" provider-name="k3l3vra">
+<addon id="plugin.video.salts" version="3.0.01" name="Stream All The Sources" provider-name="k3l3vra">
     <requires>
 		<import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -1040,10 +1040,9 @@ http://www.hometheater.co.il</description>
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="script.module.futures"/>
         <import addon="script.module.myconnpy" version="1.1.6" />
-        <import addon="script.module.tknorris.shared"/>
+        <import addon="script.module.salts"/>
         <import addon="script.module.six"/>
         <import addon="script.module.dateutil"/>
-        <import addon="script.module.image_cache" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -1847,7 +1846,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.exodus" name="Exodus Module" version="1.00.003" provider-name="Exodus">
+<addon id="script.module.exodus" name="Exodus Module" version="1.00.008" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
