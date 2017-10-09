@@ -2034,6 +2034,17 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
+<addon id="script.module.salts" name="SALTS Common Libraries" version="0.1.9" provider-name="k3l3vra">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Credit to TKnorris</summary>
+	</extension>
+</addon>
+
 <addon id="script.module.schism.common" name="Elysium Common Libraries" version="2017.06.08" provider-name="Elysium">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
