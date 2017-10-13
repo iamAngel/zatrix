@@ -469,9 +469,10 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.10.5" provider-name="Bennu">
+<addon id="plugin.video.bennu" name="Bennu" version="17.10.11" provider-name="Bennu">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+        <import addon="repository.colossus" />
 		<import addon="plugin.video.youtube" version="5.2.1" />
 		<import addon="script.module.covenant" />
 		<import addon="script.module.pyxbmct" version="1.1.4" />
@@ -514,7 +515,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.19" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="2.1.21" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -546,7 +547,7 @@
     			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>[B]1.1.13[/B][CR]Code cosmetics</news>
+		<news></news>
 	</extension>
 </addon>
 
@@ -1800,7 +1801,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="2.00.009" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="2.00.011" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
