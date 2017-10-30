@@ -568,42 +568,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.23" name="Covenant" provider-name="Covenant">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.covenant" />
-		<import addon="script.covenant.artwork" version="1.0.0" />
-		<import addon="script.covenant.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="3.0.0" />
-		<import addon="script.module.metahandler" version="1.0.0" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="covenant.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Covenant</summary>
-		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<description lang="hr">[I]Nova generacija[/I][CR][CR][B]Covenant Filmova i TV serija[/B][CR][CR]Ovaj dodatak ne sadrÅ¾i dijelove Kodi Medijskog Centra. Ne taÅ¾ite pomoÄ‡ za ovaj dodatak na sluÅ¾benim kanalima podrÅ¡ke za Kodi.[CR][CR]Autor ne posjeduje bilo kakav sadrÅ¾aj u ovom dodatku i ne preuzima bilo kakvu odgovornost za pronaÄ‘eni sadrÅ¾aj.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje bilo kakav sadrÅ¾aj koji je pronaÄ‘en i nije povezan sa bilo kojim izvorom sadrÅ¾aja. Ovaj dodatak samo pretraÅ¾uje sadrÅ¾aj na web stranicama. Koristite ga na vlastitu odgovornost!</disclaimer>
-
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news></news>
-	</extension>
-</addon>
-
 
 <addon id="plugin.video.DecadoDocs" name="Decado Documentaries" version="1.0.3" provider-name="MetalKettle">
 
@@ -1067,6 +1031,39 @@ http://www.hometheater.co.il</summary>
 http://www.hometheater.co.il</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="plugin.video.rebirth" version="1.0.0" name="Rebirth" provider-name="Cypher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.rebirth.artwork" version="1.0.0" />
+		<import addon="script.rebirth.metadata" version="1.0.0" />
+                <import addon="script.module.urlresolver"/>
+                <import addon="script.module.metahandler"/>
+                <import addon="script.module.requests"/>
+                <import addon="script.module.beautifulsoup"/>
+                <import addon="script.module.schism.common"/>
+                <import addon="script.module.futures"/>
+                <import addon="script.module.nanscrapers" version="0.5.5" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Rebirth.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Rebirth</summary>
+		<description lang="en">The Ultimate Movie, TV Show, and Playlist Add-on</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
 </addon>
 
 <addon id="plugin.video.renegadesdarts"
@@ -1889,7 +1886,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="2.00.013" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="2.00.016" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -2099,6 +2096,32 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
+<addon id="script.module.nanscrapers" name="NaN Scrapers" version="0.5.40" provider-name="Team NaN">
+        <requires>
+                <import addon="xbmc.python" version="2.1.0"/>
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.futures" version="2.2.0"/>
+                <import addon="script.module.requests"/>
+                <import addon="script.module.six"/>
+                <!--<import addon="script.module.urlresolver" version="3.0.0" optional="true"/>-->
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+        </requires>
+        <extension point="xbmc.python.module" library="lib"/>
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+                <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+                <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+                </description>
+                <license>GPL v3</license>
+                <source>https://github.com/noobsandnerds/noobsandnerds/tree/master/script.module.nanscrapers</source>
+                <forum>http://www.noobsandnerds.com/support/showthread.php?tid=17212</forum>
+                <website>http://noobsandnerds.com</website>
+        </extension>
+</addon>
+
 <addon id="script.module.python.twitch" name="python-twitch for Kodi" version="1.0.0" provider-name="A Talented Community">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -2249,6 +2272,30 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<platform>all</platform>
 		<summary lang="en">This addon is almost exact copy Urlresolver from Tknorris repository https://github.com/tknorris/script.module.urlresolver. Resolve common video host URL's to be playable in XBMC/Kodi. Website http://filmkodi.com . Our suport forum https://github.com/mrknow/filmkodi/issues. </summary>
 		<description lang="en">This addon is almost exact copy Urlresolver from Tknorris repository https://github.com/tknorris/script.module.urlresolver Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+	</extension>
+</addon>
+
+<addon id="script.rebirth.artwork" version="1.0.0" name="Rebirth Artwork" provider-name="Cypher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Rebirth Addon</summary>
+		<description>Themes for Rebirth are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.rebirth.metadata" version="1.0.0" name="Rebirth Metadata" provider-name="Cypher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Rebirth Addon</summary>
+		<description>Metadata for Rebirth are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
