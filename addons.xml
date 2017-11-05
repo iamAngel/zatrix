@@ -490,37 +490,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.bennu" name="Bennu" version="17.10.19" provider-name="Bennu">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" version="5.2.1" />
-		<import addon="script.module.covenant" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.liveresolver" version="0.1.24"/>
-		<import addon="script.video.F4mProxy" version="2.2.3"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Bennu</summary>
-		<description lang="en">We Rise From The Ashes</description>
-		<description lang="hr">Podigli smo se iz pepela</description>
-		<platform>all</platform>
-		<forum></forum>
-		<website></website>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news>release</news>
-	</extension>
-</addon>
-
 <addon id="plugin.video.cartooncrazy" name="Cartoon Crazy" version="0.2.19" provider-name="@LuciferOnKodi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -568,7 +537,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.25" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="2.1.28" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -584,7 +553,7 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Covenant</summary>
 		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<platform>all</platform>
+     	<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
 		<website></website>
@@ -732,14 +701,14 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="4.1.02" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="4.1.05" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
-		<import addon="script.exodus.artwork" />
-		<import addon="script.exodus.metadata" />
-		<import addon="script.module.urlresolver" />
-		<import addon="script.module.metahandler" />
+		<import addon="script.exodus.artwork" version="1.0.0" />
+		<import addon="script.exodus.metadata" version="1.0.0" />
+		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="exodus.py">
 		<provides>video</provides>
@@ -763,7 +732,7 @@
 			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>[B]4.1.02[/B][CR]Code cosmetics</news>
+		<news></news>
 	</extension>
 </addon>
 
@@ -975,6 +944,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.last_played" name="Last Played" version="1.1.10" provider-name="Luis Rodrigues">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Last Played</summary>
+		<summary lang="pt">Ultimos Vistos</summary>
+		<description lang="en">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+		<description lang="pt">Ultimos filmes, episodios e musicas tocadas, incluindo fontes de streaming de qualquer addon</description>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+		<source>https://github.com/5-star/plugin.video.last_played</source>
+	</extension>
+</addon>
+
 <addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.7" provider-name="lambda,enen92,jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1066,7 +1055,7 @@ http://www.hometheater.co.il</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.rebirth" version="1.0.0" name="Rebirth" provider-name="Cypher">
+<addon id="plugin.video.rebirth" version="1.0.1" name="Rebirth" provider-name="Cypher">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.rebirth.artwork" version="1.0.0" />
@@ -1881,7 +1870,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.exodus.metadata" version="1.0.1" name="Exodus Metadata" provider-name="Exodus">
+<addon id="script.exodus.metadata" version="1.0.2" name="Exodus Metadata" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -1919,7 +1908,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="2.00.016" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="2.00.021" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -1965,7 +1954,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.exodus" name="Exodus Module" version="1.00.008" provider-name="Exodus">
+<addon id="script.module.exodus" name="Exodus Module" version="1.00.021" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
