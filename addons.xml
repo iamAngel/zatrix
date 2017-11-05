@@ -537,7 +537,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.28" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="2.1.28A" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -1908,7 +1908,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="2.00.021" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="2.00.021A" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
