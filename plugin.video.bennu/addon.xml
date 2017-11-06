@@ -16,18 +16,12 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Bennu</summary>
 		<description lang="en">We Rise From The Ashes</description>
-		<description lang="hr">Podigli smo se iz pepela</description>
-		<description lang="he">אנחנו עולים מהאפר</description>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
- 		<platform>all</platform>
+		<platform>all</platform>
 		<forum></forum>
 		<website></website>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>release</news>
 	</extension>
