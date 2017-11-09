@@ -588,7 +588,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="2.1.28A" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="2.1.29" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.covenant" />
@@ -604,7 +604,7 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Covenant</summary>
 		<description lang="en">[I]A New Generation[/I][CR][CR][B]Covenant Movies and TV[/B][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-     	<platform>all</platform>
+		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
 		<website></website>
@@ -1992,9 +1992,10 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="2.00.023" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="2.00.024" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
