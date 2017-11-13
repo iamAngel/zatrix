@@ -687,33 +687,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Drstream" name="Dr Stream Fork" version="2.1" provider-name="The Alpha">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
-		<import addon="script.module.pyxbmct" version="1.1.4" />
-		<import addon="script.module.urlresolver" version="3.0.0"/>
-		<import addon="script.module.liveresolver" version="0.1.24"/>
-		<import addon="script.video.F4mProxy" version="2.2.3"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Dr Stream Fork</summary>
-		<description lang="en">This Addon Is For The Alphas Donators
-		Warning!! IF THIS ADDON GOES TO THE PUBLIC ILL DESTROY IT SIMPLE</description>
-		<platform>all</platform>
-		<forum></forum>
-		<website></website>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>REBOOT</news>
-	</extension>
-</addon>
-
 <addon id="plugin.video.dss"
        name="Dutch Sport Streams"
        version="10.0.5"
@@ -859,46 +832,6 @@
 		<source>https://offshoregit.com/lambda81/lambda-addons</source>
 		<website>https://offshoregit.com/lambda81/</website>
 		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.genesisreborn" version="2017.10.16" name="[B]Genesis Reborn[/B]" provider-name="Genesis Reborn">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.genesisreborn.artwork" version="1.0.4" />
-		<import addon="script.genesisreborn.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="4.0.07" />
-		<import addon="script.module.metahandler" version="2.9.0" />
-		<import addon="script.module.requests"/>
-		<import addon="script.module.beautifulsoup"/>
-		<import addon="script.module.futures"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="genesisreborn.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Genesis Reborn Fork Movies/TV Shows</summary>
-		<description lang="en">Created by developer [COLOR yellow]JP Hightek[/COLOR] for Jesus Box Media. Please visit [COLOR red]www.jesusboxmedia.tv[/COLOR] for Genesis Reborn Fork Movies/TV Shows support and assistance! Please remember that genesisreborn is not an official part of the Kodi media player you are running, and therefore is not to be mentioned within official support channels of Kodi, this addon has nothing to do with the media player itself, nor itâ€™s intended use, it is simply a third party plugin which has been added to your system.</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<description lang="de">Bitte besuche [COLOR red]www.jesusboxmedia.tv[/COLOR] fÃ¼r UnterstÃ¼tzung und Fragen zu genesisreborn! Beachte dabei, dass genesisreborn nicht offizieller Teil des Media Players ist den du gerade verwendest und daher nicht von dem offiziellen Support-KanÃ¤le abgedeckt wird, dieses Addon hat nichts zu tun mit dem Media-Player selbst, noch ist es dafÃ¼r beabsichtigt, es handelt sich hierbei lediglich um ein Drittanbieter-Anwendung die dem System hinzugefÃ¼gt wurde.</description>
-		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-		<description lang="fr">SVP visitez [COLOR red]www.jesusboxmedia.tv[/COLOR] pour avoir de l'aide sur genesisreborn. Prenez note que genesisreborn n'est pas une partie intÃ©grante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui mÃªme, c'est simplement un addiciel qui a Ã©tÃ© ajoutÃ© Ã  votre systÃ¨me.</description>
-		<disclaimer lang="fr">L'auteur n'hÃ©berge pas ou ne distribue pas le contenu qui vous est affichÃ© avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
-		<platform>all</platform>
-		<forum>https://www.jesusboxmedia.tv</forum>
-		<website>https://www.jesusboxmedia.tv/</website>
-		<source>https://jesusboxrepo.xyz/repo</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-001.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-002.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-003.jpg</screenshot>
-		</assets>
-		<news>- Initial release
-- Free movies
-- Free TV Shows</news>
 	</extension>
 </addon>
 
@@ -1075,37 +1008,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.onlydutch"
-       name="[COLOR darkorange][B]O[/B][/COLOR]nly [COLOR darkorange][B]D[/B][/COLOR]utch"
-       version="1.0.0"
-       provider-name="Wouter Visscher">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Nederlandse Addon</summary>
-    <description lang="en">Met Nederlandse video's van NL Films en NL Series van youtube</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.playlistLoader" name="Playlist Loader" version="1.0.9" provider-name="Avigdor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1120,39 +1022,6 @@ http://www.hometheater.co.il</summary>
 http://www.hometheater.co.il</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.poseidon" version="1.2.4" name=" Poseidon" provider-name="Soulless">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.poseidon.artwork" version="1.0.0" />
-		<import addon="script.poseidon.metadata" version="1.0.0" />
-                <import addon="script.module.urlresolver"/>
-                <import addon="script.module.metahandler"/>
-                <import addon="script.module.requests"/>
-                <import addon="script.module.beautifulsoup"/>
-                <import addon="script.module.schism.common"/>
-                <import addon="script.module.futures"/>
-                <import addon="script.module.nanscrapers" version="0.5.5" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="poseidon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Poseidon</summary>
-		<description lang="en">The Ultimate Movie, TV Show, and Playlist Add-on</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<platform>all</platform>
-		<forum></forum>
-		<website></website>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news></news>
-	</extension>
 </addon>
 
 <addon id="plugin.video.rebirth" version="1.0.2" name="Rebirth" provider-name="Cypher">
@@ -1301,47 +1170,6 @@ http://www.hometheater.co.il</description>
 		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="plugin.video.sportie"
-         name="Sportie"
-         version="2.00.004"
-         provider-name="Echo Coder">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.httplib2" />
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.liveresolver" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.echo" />
-    <import addon="script.video.F4mProxy" />
-    <import addon="plugin.video.f4mTester" />
-    <import addon="plugin.video.SportsDevil" />
-    <import addon="program.plexus" version="0.1.4" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">Sportie is a multi scraping/playlist sports addon that scrapes numerous websites to bring you the most up to date streams every time!
-
--Soccer Streams Support
--Reddit Support
--Plus Much More!</description>
-    <disclaimer lang="en">Sportie does not host any of the streams provided within the addon.</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/art/screenshots/screenshot-01.jpg</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-02.jpg</screenshot>
-        <screenshot>resources/art/screenshots/screenshot-03.jpg</screenshot>
-    </assets>
-  </extension>
 </addon>
 
 <addon
@@ -1691,42 +1519,6 @@ http://halowtv.org[/COLOR]</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.xxx-o-dus"
-	     name="XXX-O-DUS"
-	     version="3.00.001"
-	     provider-name="Xibalba">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.xibalba"/>
-    <import addon="script.xxxodus.artwork"/>
-    <import addon="script.xxxodus.scrapers"/>
-    <import addon="script.module.urlresolver"/>
-    <import addon="repository.xibalba"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">The AIO XXX Addon for Kodi</summary>
-    <description lang="en">[COLOR white]XXX-O-DUS scrapes many websites to bring you hundreds of thousands of videos. Features of the addon include, history monitoring, favourites, downloadable videos, parental controls and more![/COLOR]
-
-[COLOR white]Websites Include: Porn.com, PornHD.com, Chaturbate.com, RedTube.com, Xhamster.com, YouPorn.com, PornFun.com, Motherless.com,Porn00.org, Spankbang.com, Virtualpornstars.com, Watchxxxfree.com, Perfectgirls.net, XNXX.com and many more.[/COLOR]</description>
-    <disclaimer lang="en">The pages of this addon are designed for ADULTS only and may include pictures and materials that some viewers may find offensive. If you are under the age of 18, if such material offends you or if it is illegal to view such material in your community please exit the addon.</disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>http://fusion.tvaddons.ag</website>
-    <forum>http://tvaddons.ag/forums</forum>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="plugin.video.ZemTV-shani"
        name="Zem"
        version="6.7.0"
@@ -1769,19 +1561,6 @@ http://halowtv.org[/COLOR]</description>
 	<extension point="xbmc.addon.metadata">
 		<summary>AresProject.</summary>
 		<description>Ares-Project Addons Source. Visit Us At https://ares-project.uk</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.jesusboxtv" name="Jesusbox Repository" version="1.0.3" provider-name="Playonmonkey">
-	<extension point="xbmc.addon.repository" name="Jesusbox Repository">
-		<info compressed="false">https://raw.githubusercontent.com/jesusboxrepo/repository/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jesusboxrepo/repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jesusboxrepo/repository/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Welcome to the Jesusbox Repository where you will find all Jesusbox produced Addon-ons and wizards</summary>
-		<description>The Best Media Center Box Available</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -2008,32 +1787,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.genesisreborn.artwork" version="1.4.1" name="Genesis Reborn Artwork" provider-name="Jesus Box Media">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Genesis Reborn Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.genesisreborn.metadata" version="1.0.1" name="genesisreborn Metadata" provider-name="Genesis Reborn">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the genesisreborn Addon</summary>
-		<description>Metadata for genesisreborn are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="script.module.covenant" name="Covenant Module" version="2.00.025" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -2135,22 +1888,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 		<platform>all</platform>
 		<summary lang="en">A local cache of TMDB Image API Responses</summary>
 		<description lang="en">This is a local, querable DB cache of image keys that lighten the load on image metadata sources</description>
-	</extension>
-</addon>
-
-<addon id="script.module.jesusboxmedia.common" name="Jesus Box Media Common Libraries" version="3.1.0" provider-name="Jesus Box Media">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.six" />
-		<import addon="script.module.metahandler" />
-		<import addon="script.module.beautifulsoup" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Collection of modules used by Jesus Box Media Addons</summary>
-		<description lang="en">Collection of modules used by Jesus Box Media Addons</description>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
 </addon>
 
@@ -2448,30 +2185,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.poseidon.artwork" version="1.0.5" name="Poseidon Artwork" provider-name="Soulless">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Poseidon Addon</summary>
-		<description>Themes for Poseidon are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.poseidon.metadata" version="1.0.0" name="Poseidon Metadata" provider-name="DaHenchmen">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Poseidon Addon</summary>
-		<description>Metadata for Poseidon are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <addon id="script.rebirth.artwork" version="1.0.0" name="Rebirth Artwork" provider-name="Cypher">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -2544,29 +2257,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     <summary lang="en">Proxy for f4m</summary>
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
-</addon>
-
-<addon id="script.xxxodus.artwork" version="1.00.000" name="XXXODUS Artwork" provider-name="Xibalba">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Artwork for XXXODUS</summary>
-		<description>Artwork for XXXODUS is maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.xxxodus.scrapers" name="XXXODUS Scrapers" version="1.00.000" provider-name="Xibalba">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Scrapers for use in XXXODUS</summary>
-	</extension>
 </addon>
 
 <addon id="service.autosubs"
