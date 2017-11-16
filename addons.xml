@@ -741,13 +741,14 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.exodus" version="4.1.05" name="Exodus" provider-name="Exodus">
+<addon id="plugin.video.exodus" version="4.1.07" name="Exodus" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.exodus" />
 		<import addon="script.exodus.artwork" version="1.0.0" />
 		<import addon="script.exodus.metadata" version="1.0.0" />
 		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="exodus.py">
@@ -763,14 +764,15 @@
 		<description lang="fr">SVP visitez [COLOR blue]www.tvaddons.co[/COLOR] pour avoir de l'aide sur Exodus. Prenez note qu'Exodus n'est pas une partie intÃ©grante de votre outil de visionnement multimedia et SVP ne le mentionnez pas dans les media sociaux officiels, cet addiciel n'a rien a voir avec votre lecteur multimedia lui mÃªme, c'est simplement un addiciel qui a Ã©tÃ© ajoutÃ© Ã  votre systÃ¨me.</description>
 		<disclaimer lang="fr">L'auteur n'hÃ©berge pas ou ne distribue pas le contenu qui vous est affichÃ© avec cet addiciel. L'auteur n'a pas d'alliance avec les distributeurs de contenu.</disclaimer>
 		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum>https://www.tvaddons.co/forums/</forum>
 		<website>https://www.tvaddons.co/</website>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news></news>
 	</extension>
@@ -962,6 +964,26 @@
 		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
 		<source>https://github.com/5-star/plugin.video.last_played</source>
 	</extension>
+</addon>
+
+<addon id="plugin.video.myriad_gw" name="MYRIAD" version="1.0.3" provider-name="Dandymedia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver"  version="3.0.0"/>
+	<import addon="script.module.addon.common" />
+    <import addon="script.module.dandyscrapers" version="0.0.1" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="en">Multi Site scrapper for Movies and TV Shows.</summary>
+	<description lang="en">Multi scrapper using IMDB and a modded version of nanscrapers, credit to NAN and Midraal for original code adapted and used, and allowing me to learn from.[CR][CR]Thanks to Origin for help with headaches along the way.[CR][CR]Enable and authorise debrid sources through the url resolver as normal, more links will become available.</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	<platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.7" provider-name="lambda,enen92,jsergio">
@@ -1293,6 +1315,37 @@ For updates check the readme.
     <description lang="en">[COLOR red]All channels from around the world/Movie/Child Movie/Streamax.tv/Swefilm.Tv/http://dreamfilmhd.bz// YouTube/Sports Replays/Filmon.TV/Radio/Ace Stream/Music/Live Sport/LiveStream/follow me on FB/Twitter
 Halow TV Add-on
 http://halowtv.org[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.thepyramid"
+       name="The Pyramid"
+       version="1.61"
+       provider-name="TomBraiderMovies">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLORblue]Pyramid All In One Add On[/COLOR]</summary>
+    <description lang="en">[COLORblue]This Is A 3rd Party Add On And Is Not Linked To Kodi In Any Way. For Support Tweet @PyramidAddOn. All The Content We Provide Is Freely Available On The Internet. We Do Not Store Any Content Ourselves.[/COLOR]</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -1798,6 +1851,29 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
+<addon id="script.module.dandyscrapers" name="Dandy Scrapers" version="17.11.11" provider-name="DandyMedia">
+        <requires>
+                <import addon="xbmc.python" version="2.1.0"/>
+                <import addon="script.module.beautifulsoup" version="3.2.1"/>
+                <import addon="script.module.futures" version="2.2.0"/>
+                <import addon="script.module.requests"/>
+                <import addon="script.module.six"/>
+			    <import addon="script.module.urlresolver"  version="2.1.2"/>
+	            <import addon="script.module.muckys.common" version="1.3.5" />
+        </requires>
+        <extension point="xbmc.python.module" library="lib"/>
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+                <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <platform>all</platform>
+                <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+                <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, modded from NANSCRAPERS.</description>
+	            <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+	            <platform>all</platform>
+        </extension>
+</addon>
+
 <addon id="script.module.dateutil"
        name="dateutil"
        version="2.5.3"
@@ -1833,7 +1909,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<addon id="script.module.exodus" name="Exodus Module" version="1.00.021" provider-name="Exodus">
+<addon id="script.module.exodus" name="Exodus Module" version="1.00.025" provider-name="Exodus">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
