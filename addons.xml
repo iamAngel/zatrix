@@ -45,7 +45,7 @@
    <import addon="script.module.simplejson" />
    <import addon="script.module.six" />
    <import addon="script.module.requests" />
-   <import addon="script.module.livestreamer" />
+   <import addon="script.module.streamlink.base" />
    <!-- <import addon="script.video.F4mProxy" /> -->
    <!-- <import addon="plugin.video.f4mTester" /> -->
   </requires>
